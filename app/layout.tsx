@@ -5,8 +5,8 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ContentFlow - AI Content Pipeline Automation',
-  description: 'Generate, draft, and optimize content in minutes. Powered by AI.',
+  title: 'LOOM - Content Pipeline Automation',
+  description: 'Generate platform-ready content in seconds. From topic to publish.',
   openGraph: {
     title: 'ContentFlow - AI Content Pipeline Automation',
     description: 'Generate, draft, and optimize content in minutes. Powered by AI.',
