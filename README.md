@@ -6,7 +6,7 @@ Generate platform-ready content in seconds. From topic to publish.
 
 ## Overview
 
-LOOM is a content pipeline automation system designed for creators, marketers, and communicators who move fast. Input a topic, get five platform-ready content formats — fully drafted, structured, and optimized for engagement.
+LOOM is a content pipeline automation system designed for creators, marketers, and communicators who move fast. Input a topic, get five platform-ready content formats - fully drafted, structured, and optimized for engagement.
 
 ## Features
 
@@ -18,10 +18,10 @@ LOOM is a content pipeline automation system designed for creators, marketers, a
 
 ## How It Works
 
-1. **Enter Topic** — Start with any subject, idea, or trend
-2. **Generate Ideas** — Get 5 format-specific content ideas
-3. **Draft Content** — Full, ready-to-use content for your chosen format
-4. **Optimize** — AI-enhanced version optimized for engagement and reach
+1. **Enter Topic** - Start with any subject, idea, or trend
+2. **Generate Ideas** - Get 5 format-specific content ideas
+3. **Draft Content** - Full, ready-to-use content for your chosen format
+4. **Optimize** - AI-enhanced version optimized for engagement and reach
 
 ## Tech Stack
 
@@ -54,13 +54,13 @@ This version runs on simulated output to demonstrate the UI/UX and pipeline arch
 
 LOOM is built on three core principles:
 
-1. **Speed** — Get from idea to publish-ready in under 2 seconds
-2. **Quality** — No compromise on content structure or coherence
-3. **Simplicity** — One input, five outputs. No configuration needed.
+1. **Speed** - Get from idea to publish-ready in under 2 seconds
+2. **Quality** - No compromise on content structure or coherence
+3. **Simplicity** - One input, five outputs. No configuration needed.
 
 ## Author
 
-Built and maintained by **[Supreeth](https://github.com/wSupreeth)** — V2.S4 / A project exploring AI-powered content automation and creative workflows.
+Built and maintained by **[Supreeth](https://github.com/wSupreeth)** - V2.S4 / A project exploring AI-powered content automation and creative workflows.
 
 ## License
 
