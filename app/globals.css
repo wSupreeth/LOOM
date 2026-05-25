@@ -2,10 +2,117 @@
 @tailwind components;
 @tailwind utilities;
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { background: #080808; }
-::selection { background: rgba(20,184,166,0.3); color: #fff; }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0f0f0f; }
-::-webkit-scrollbar-thumb { background: rgba(20,184,166,0.3); border-radius: 3px; }
+body {
+  background: #080808;
+  margin: 0;
+}
+
+::selection {
+  background: rgba(20, 184, 166, 0.3);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 184, 166, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 184, 166, 0.5);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes loomPulse {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.5); opacity: 1; }
+}
+
+@keyframes morphIn {
+  from { opacity: 0; transform: scale(0.96) translateY(20px); filter: blur(8px); }
+  to { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+}
+
+@keyframes morphOut {
+  from { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+  to { opacity: 0; transform: scale(1.04) translateY(-20px); filter: blur(8px); }
+}
+
+.morph-container {
+  transition: opacity 0.4s ease;
+}
+.morph-in {
+  animation: morphIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.morph-out {
+  animation: morphOut 0.4s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+* { box-sizing: border-box; }
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.loom-input-wrap:focus-within {
+  border-color: rgba(20, 184, 166, 0.4) !important;
+  box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.05);
+}
+
+.hint-chip:hover {
+  background: rgba(20, 184, 166, 0.1) !important;
+  color: #14b8a6 !important;
+  border-color: rgba(20, 184, 166, 0.3) !important;
+  transform: translateY(-1px);
+}
+
+.primary-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 32px rgba(20, 184, 166, 0.5) !important;
+}
+
+.ghost-btn:hover {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  transform: translateY(-1px);
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.idea-card {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.idea-card:hover {
+  background: rgba(20, 184, 166, 0.05) !important;
+  border-color: rgba(20, 184, 166, 0.3) !important;
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 40px rgba(20, 184, 166, 0.08);
+}
+
+button, a, input {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 768px) {
+  input { font-size: 16px !important; }
+}
